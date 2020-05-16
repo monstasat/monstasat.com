@@ -33,6 +33,31 @@
     }
   },
   "rules": {
+    "arrow-parens": [
+      "error",
+      "always"
+    ],
+    "quotes": [
+      "error",
+      "single"
+    ],
+    "arrow-body-style": [
+      "warn",
+      "as-needed"
+    ],
+    "jsx-quotes": [
+      "error",
+      "prefer-single"
+    ],
+    "import/extensions": [
+      "error",
+      "ignorePackages",
+      {
+        "ts": "never",
+        "tsx": "never"
+      }
+    ],
+    "react/jsx-props-no-spreading": "off",
     "react/jsx-filename-extension": [
       "error",
       {
