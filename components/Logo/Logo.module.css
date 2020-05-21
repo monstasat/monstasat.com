@@ -1,0 +1,9 @@
+.logo a {
+  display: inline-flex;
+  align-items: center;
+  
+  height: 100%;
+  
+  color: var(--primary-color);
+  text-decoration: none;
+}
