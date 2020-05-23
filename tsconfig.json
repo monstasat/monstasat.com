@@ -20,14 +20,15 @@
     "skipLibCheck": true,
     "strict": true,
     "target": "ESNext",
-    "baseUrl": "."
+    "baseUrl": "src"
   },
   "exclude": [
     "node_modules",
     ".next"
   ],
   "include": [
-    "**/*.ts",
-    "**/*.tsx"
+    "next-env.d.ts",
+    "src/**/*.ts",
+    "src/**/*.tsx"
   ]
 }

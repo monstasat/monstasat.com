@@ -1,5 +1,5 @@
 module.exports = {
-  stories: ['../components/**/*.stories.tsx'],
+  stories: ['../src/**/*.stories.tsx'],
   webpackFinal: async (config, { configType }) => {
     // get index of css rule
     const ruleCssIndex = config.module.rules.findIndex(rule => rule.test.toString() === '/\\.css$/');
