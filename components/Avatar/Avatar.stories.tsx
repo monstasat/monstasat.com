@@ -1,7 +1,6 @@
 import React from 'react';
 
-import img from '../../public/avatar.jpg';
-import Avatar, { AvatarSize } from './Avatar';
+import Avatar from './Avatar';
 
 export default {
   title: 'Avatar',
@@ -9,13 +8,13 @@ export default {
 };
 
 export const withDefault = (): React.ReactElement => (
-  <Avatar src={img} />
+  <Avatar src='/avatar.jpg' />
 );
 
 export const withSize = (): React.ReactElement => (
   <div>
-    <Avatar src={img} size={AvatarSize.Small} />
-    <Avatar src={img} size={AvatarSize.Medium} />
-    <Avatar src={img} size={AvatarSize.Large} />
+    <Avatar src='/avatar.jpg' size='small' />
+    <Avatar src='/avatar.jpg' size='medium' />
+    <Avatar src='/avatar.jpg' size='large' />
   </div>
 );

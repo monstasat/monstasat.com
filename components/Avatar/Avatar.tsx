@@ -3,25 +3,19 @@ import classNames from 'classnames';
 
 import styles from './Avatar.module.css';
 
-export enum AvatarSize {
-  Small = 'small',
-  Medium = 'medium',
-  Large = 'large'
-}
-
 export type Props = {
   alt?: string;
   src: string;
   className?: string;
   style?: React.CSSProperties;
-  size?: AvatarSize;
+  size?: 'small' | 'medium' | 'large';
 };
 
-const getSizeClassName = (size?: AvatarSize): string | undefined => {
+const getSizeClassName = (size?: Props['size']): string | undefined => {
   switch (size) {
-    case AvatarSize.Small:
+    case 'small':
       return styles.sizeSmall;
-    case AvatarSize.Large:
+    case 'large':
       return styles.sizeLarge;
     default:
       return undefined;

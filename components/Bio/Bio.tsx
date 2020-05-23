@@ -7,7 +7,7 @@ import styles from './Bio.module.css';
 
 const Bio: React.FC = () => (
   <section className={styles.container}>
-    <Avatar src='/public/avatar.jpg' />
+    <Avatar size='large' src='/avatar.jpg' />
     <p>
       I am an enthusiastic frontend developer with some hardware background.
       Doing my job with
