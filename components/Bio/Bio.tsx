@@ -9,7 +9,7 @@ const Bio: React.FC = () => (
   <section className={styles.container}>
     <Avatar size='large' src='/avatar.jpg' />
     <p>
-      I am an enthusiastic frontend developer with some hardware background.
+      I'm Alexander Yanin, enthusiastic frontend developer with some hardware background.
       Doing my job with
       {' '}
       <Emoji kind='love' />

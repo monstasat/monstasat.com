@@ -1,8 +1,10 @@
 import React from 'react';
 
+import styles from './Emoji.module.css';
+
 const EMOJI = {
   love: '❤️',
-  taxi: '🚕',
+  taxi: '🚖',
 };
 
 export type Props = {
@@ -16,6 +18,7 @@ const Emoji: React.FC<Props> = (props: Props) => {
   return (
     <span
       aria-label={label}
+      className={styles.emoji}
       role='img'
     >
       {EMOJI[kind]}
