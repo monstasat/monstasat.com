@@ -1,0 +1,24 @@
+.avatar {
+  width: 64px;
+  height: 64px;
+  overflow: hidden;
+
+  border-radius: 50%;
+}
+
+.avatar.sizeSmall {
+  width: 48px;
+  height: 48px;
+}
+
+.avatar.sizeLarge {
+  width: 96px;
+  height: 96px;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
