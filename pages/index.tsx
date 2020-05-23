@@ -1,15 +1,14 @@
 import React from 'react';
-import Head from 'next/head';
 
+import SEO from 'components/SEO';
 import Bio from 'components/Bio';
 
 const Home: React.FC = () => (
   <div>
-    <Head>
-      <title>monstasat</title>
-      <meta charSet='utf-8' />
-      <meta name='viewport' content='initial-scale=1.0, width=device-width' />
-    </Head>
+    <SEO
+      title='Alexander Yanin - enthusiastic frontend developer'
+      keywords={['frontend', 'nextjs', 'react']}
+    />
     <Bio />
   </div>
 );
